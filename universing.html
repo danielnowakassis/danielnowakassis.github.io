@@ -1,31 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
-    <meta charset="UTF-8">
+	<meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Daniel Nowak</title>
+    <title>Universing</title>
     <link rel="stylesheet" href="fontawesome/css/all.min.css"> <!-- https://fontawesome.com/ -->
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap" rel="stylesheet">
     <!-- https://fonts.google.com/ -->
     <link rel="stylesheet" href="css/bootstrap.min.css">
     <link rel="stylesheet" href="css/templatemo-video-catalog.css">
+</head>
 <!--
 
-TemplateMo 552 Video Catalog
-
-https://templatemo.com/tm-552-video-catalog
-
 -->
-</head>
-
 <body>
-    <div class="tm-page-wrap mx-auto">
-        <div class="position-relative">
-            <div class="position-absolute tm-site-header">
-                <div class="container-fluid position-relative">
-                    <div class="row">
+	<div class="tm-page-wrap mx-auto">
+		<div class="position-relative">
+			<div class="potition-absolute tm-site-header">
+				<div class="container-fluid position-relative">
+					<div class="row">						
                         <div class="col-7 col-md-4">
+                            <a href="index.html" class="tm-bg-black text-center tm-logo-container">
+                                <i class="fas fa-video tm-site-logo mb-3"></i>
+                                <h1 class="tm-site-name">Catalogo de Vídeos</h1>
+                            </a>
                         </div>
                         <div class="col-5 col-md-8 ml-auto mr-0">
                             <div class="tm-site-nav">
@@ -41,7 +39,7 @@ https://templatemo.com/tm-552-video-catalog
                                     <div class="collapse navbar-collapse tm-nav" id="navbar-nav">
                                         <ul class="navbar-nav text-uppercase">
                                             <li class="nav-item active">
-                                                <a class="nav-link tm-nav-link" href="#">Projetos <span class="sr-only">(current)</span></a>
+                                                <a class="nav-link tm-nav-link" href="index.html">Projetos <span class="sr-only">(current)</span></a>
                                             </li>
                                             <li class="nav-item">
                                                 <a class="nav-link tm-nav-link" href="contact.html">Contato</a>
@@ -51,94 +49,67 @@ https://templatemo.com/tm-552-video-catalog
                                 </nav>
                             </div>
                         </div>
-                    </div>
-                </div>
-            </div>
-            <div class="tm-welcome-container text-center text-white">
-                <div class="tm-welcome-container-inner">
-                    <p class="tm-welcome-text mb-1 text-white">Aqui você pode ver todos os projetos</p>
-                    <p class="tm-welcome-text mb-5 text-white">realizados por Daniel Nowak na PUC-PR</p>
-                    <a href="#content" class="btn tm-btn-animate tm-btn-cta tm-icon-down">
-                        <span>Veja</span>
-                    </a>
-                </div>
+					</div>
+				</div>
+			</div>
+			<div class="tm-welcome-container tm-fixed-header tm-fixed-header-1">
+				<div class="text-center">
+					<p class="pt-5 px-3 tm-welcome-text tm-welcome-text-2 mb-1 text-white mx-auto">Ciência da Computação World</p>                	
+				</div>                
             </div>
 
-            <div id="tm-video-container">
-                <video autoplay muted loop id="tm-video">
-                    <!-- <source src="video/sunset-timelapse-video.mp4" type="video/mp4"> -->
-                        <source src="video/wheat-field.mp4" type="video/mp4">
-                </video>    
-            </div>
-            
-            <i id="tm-video-control-button" class="fas fa-pause"></i>
-        </div>
+			<!-- Header image -->
+            <div id="tm-fixed-header-bg"></div> 
+		</div>
 
-        <div class="container-fluid">
-            <div id="content" class="mx-auto tm-content-container">
-                <main>
-                    <div class="row">
-                        <div class="col-12">
-                            <h2 class="tm-page-title mb-4">Projetos</h2>    
-                        </div>
-                    </div>
-                    
-                    <div class="row tm-catalog-item-list">
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-01.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="construct.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>    
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Ciência da Computação World</h3>
-                                <p class="tm-catalog-item-text"> Apresentação do curso de Ciência da Computação. 
-                                    Feito com <span class="tm-text-secondary">Construct 3.0</span> 
-                                    , o jogo é uma apresentação das matérias do primeiro período, contando com cutscenes e desafios.
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-02.png" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Universing</h3>
-                                <p class="tm-catalog-item-text"> Arte digital interativa do Sistema Solar. Feito em Java na IDE Processing. 
+		<!-- Page content -->
+		<div class="container-fluid">
+			<div class="mx-auto tm-content-container">
+				<main>
+					<div class="row mb-5 pb-4">
+						<div class="col-12">
+							<!-- Video player 1422x800 -->
+							<video width="1422" height="800" controls autoplay>
+							  <source src="video/universing.mp4" type="video/mp4">							  
+							Your browser does not support the video tag.
+							</video>
+						</div>
+					</div>
+					<div class="row mb-5 pb-5">
+						<div class="col-xl-8 col-lg-7">
+							<!-- Video description -->
+							<div class="tm-video-description-box">
+								<h2 class="mb-5 tm-video-title">Mauris dapibus urna nec ipsum posuere</h2>
+								<p class="mb-4">Cras dictum pretium est, et imperdiet ex. Fusce vitae vestibulum ipsum. Maecenas ultricies ipsum a urna ullamcorper, id interdum est blandit. Vivamus sit amet justo sed erat iaculis consequat. Nulla suscipit posuere lectus ut venenatis. Proin sed orci eget tellus euismod vulputate eu eu arcu.</p>
+								<p class="mb-4">Etiam a bibendum lorem. Curabitur ac bibendum odio. Vivamus euismod dui mauris, ut tincidunt mi congue quis. Phasellus luctus orci dolor, a luctus massa tincidunt vitae. Integer sit amet odio id libero tincidunt dignissim in eget arcu.</p>
+								<p class="mb-4">Aliquam tristique ut magna sit amet tincidunt. Sed tempor tellus nulla, molestie luctus lectus tincidunt id. Cras euismod leo a urna placerat, vel blandit turpis fermentum.</p>	
+							</div>							
+						</div>
+						<div class="col-xl-4 col-lg-5">
+							<!-- Share box -->
+							<div class="tm-bg-gray tm-share-box">
+								<h6 class="tm-share-box-title mb-4">Share this video</h6>
+								<div class="mb-5 d-flex">
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-facebook"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-twitter"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="fab fa-pinterest"></i></a>
+									<a href="" class="tm-bg-white tm-share-button"><i class="far fa-envelope"></i></a>
+								</div>
+								<p class="mb-4">Author: <a href="https://templatemo.com" class="tm-text-link">TemplateMo</a></p>
+								<a href="#" class="tm-bg-white px-5 mb-4 d-inline-block tm-text-primary tm-likes-box tm-liked">
+									<i class="fas fa-heart mr-3 tm-liked-icon"></i>
+									<i class="far fa-heart mr-3 tm-not-liked-icon"></i>
+									<span id="tm-likes-count">486 likes</span>
+								</a>
+								<div>
+									<button class="btn btn-primary p-0 tm-btn-animate tm-btn-download tm-icon-download"><span>Download do Vídeo</span></button>	
+								</div>								
+							</div>
+						</div>
+					</div>
+				</main>
 
-                            </div>
-                        </div>
-                        <div class="col-lg-4 col-md-6 col-sm-12 tm-catalog-item">
-                            <div class="position-relative tm-thumbnail-container">
-                                <img src="img/tn-03.jpg" alt="Image" class="img-fluid tm-catalog-item-img">    
-                                <a href="video-page.html" class="position-absolute tm-img-overlay">
-                                    <i class="fas fa-play tm-overlay-icon"></i>
-                                </a>
-                            </div>                            
-                            <div class="p-4 tm-bg-gray tm-catalog-item-description">
-                                <h3 class="tm-text-primary mb-3 tm-catalog-item-title">Dividas do Vilmar</h3>
-                                <p class="tm-catalog-item-text"> Site com conteudo descontraido, contendo piada interna da matéria de Expêriencia Criativa da Puc-PR 
-                                
-                            </div>
-                        </div>
-                    </div>
-
-                    <!-- Catalog Paging Buttons -->
-                    <div>
-                        <ul class="nav tm-paging-links">
-                            <li class="nav-item active"><a href="#" class="nav-link tm-paging-link">1</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">2</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">3</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">4</a></li>
-                            <li class="nav-item"><a href="#" class="nav-link tm-paging-link">></a></li>
-                        </ul>
-                    </div>
-                </main>
-
-                <!-- Subscribe form and footer links -->
+				<!-- Subscribe form and footer links -->
                 <div class="row mt-5 pt-3">
                     <div class="col-xl-6 col-lg-12 mb-4">
                         <div class="tm-bg-gray p-5 h-100">
@@ -184,73 +155,25 @@ https://templatemo.com/tm-552-video-catalog
                         - Designed by <a href="https://templatemo.com" rel="nofollow" target="_parent">TemplateMo</a></p>
                     </div>
                 </footer>
-            </div> <!-- tm-content-container -->
-        </div>
+			</div> <!-- .tm-content-container -->
+		</div>
+	</div>
 
-    </div> <!-- .tm-page-wrap -->
-
-    <script src="js/jquery-3.4.1.min.js"></script>
+	<script src="js/jquery-3.4.1.min.js"></script>
     <script src="js/bootstrap.min.js"></script>
     <script>
-        function setVideoSize() {
-            const vidWidth = 1920;
-            const vidHeight = 1080;
-            let windowWidth = window.innerWidth;
-            let newVidWidth = windowWidth;
-            let newVidHeight = windowWidth * vidHeight / vidWidth;
-            let marginLeft = 0;
-            let marginTop = 0;
+    	$(document).ready(function() {
+    		$('.tm-likes-box').click(function(e) {
+    			e.preventDefault();
+    			$(this).toggleClass('tm-liked');
 
-            if (newVidHeight < 500) {
-                newVidHeight = 500;
-                newVidWidth = newVidHeight * vidWidth / vidHeight;
-            }
-
-            if(newVidWidth > windowWidth) {
-                marginLeft = -((newVidWidth - windowWidth) / 2);
-            }
-
-            if(newVidHeight > 720) {
-                marginTop = -((newVidHeight - $('#tm-video-container').height()) / 2);
-            }
-
-            const tmVideo = $('#tm-video');
-
-            tmVideo.css('width', newVidWidth);
-            tmVideo.css('height', newVidHeight);
-            tmVideo.css('margin-left', marginLeft);
-            tmVideo.css('margin-top', marginTop);
-        }
-
-        $(document).ready(function () {
-            /************** Video background *********/
-
-            setVideoSize();
-
-            // Set video background size based on window size
-            let timeout;
-            window.onresize = function () {
-                clearTimeout(timeout);
-                timeout = setTimeout(setVideoSize, 100);
-            };
-
-            // Play/Pause button for video background      
-            const btn = $("#tm-video-control-button");
-
-            btn.on("click", function (e) {
-                const video = document.getElementById("tm-video");
-                $(this).removeClass();
-
-                if (video.paused) {
-                    video.play();
-                    $(this).addClass("fas fa-pause");
-                } else {
-                    video.pause();
-                    $(this).addClass("fas fa-play");
-                }
-            });
-        })
+    			if($(this).hasClass('tm-liked')) {
+    				$('#tm-likes-count').html('486 likes');
+    			} else {
+    				$('#tm-likes-count').html('485 likes');
+    			}
+    		});
+    	});
     </script>
 </body>
-
 </html>
